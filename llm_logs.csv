@@ -1,0 +1,11 @@
+Date,User Query,Assistant Response (summary),Notes
+10/8/25,Git push failed: 'origin' does not appear to be a git repository.,Explained adding remote and pushing: `git remote add origin <repo>` then `git push -u origin main`.,Setup-only guidance; no project code shared.
+10/8/25,Deployed to GitHub Pages but site shows a blank/empty page.,Diagnosed homepage/basename mismatch; set exact `homepage` URL and derived Router `basename` from PUBLIC_URL.,Config-only fix; no UI/logic code provided.
+10/8/25,Still blank after fixes; need reliable Pages routing.,Switched to HashRouter in production to avoid 404/basename issues on GitHub Pages.,Routing mode change only; app behavior unchanged.
+10/8/25,Need CI to deploy SPA correctly.,Added GH Actions workflow and SPA fallback (`cp build/index.html build/404.html`).,Build/deploy step; no feature code included.
+,,,
+11/4/25,Why am I getting bad auth / authentication failed with my Atlas URI?,Explained how to properly format the Atlas connection string and reminded me to use the correct database user and whitelist IPs.,Setup-only guidance; no project code shared.
+11/4/25,Render logs showed 'Cannot find module /opt/render/project/src/index.js'. What should my package.json setup be?,Clarified that my entry point should be 'server.js' and advised to update package.json main field and Render start command accordingly.,Config-only fix; no logic or feature code written.
+11/4/25,How do I run a MongoDB seeding script that uses environment variables from .env?,"Explained how to use 'require(""dotenv"").config()' at the top of the seed file and ensure MONGODB_URI is read before connecting.",Help with environment setup; code independently implemented.
+11/4/25,"How to implement GET endpoints for users and tasks with filtering, sorting, and pagination?","It provided conceptual help on mapping query parameters (where, sort, select, skip, limit) to Mongoose methods. I implemented the code myself.",Routing syntax clarification; no functional code provided.
+11/4/25,How can I verify my API is live and ready for submission?,"It confirmed I should check base route response and verify /api, /api/users, and /api/tasks return data before submitting.",Deployment verification only; no new code added.
